@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f7f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.form,
+.mostratoken {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #070707;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+#toggleMode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #FF9800;
+    border-radius: 50px;
+}
+
+body.day-mode {
+    background-color: #a7a7a7;
+    color: #000;
+}
+
+body.day-mode .container,
+body.day-mode .form,
+body.day-mode .mostratoken {
+    background-color: #ece9e9;
+    color: #000;
+}
+
+body.night-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.night-mode .container,
+body.night-mode .form,
+body.night-mode .mostratoken {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.night-mode button {
+    background-color: #FF9800;
+}
+
+body.night-mode button:hover {
+    background-color: #e68a00;
+}
+
+body.night-mode #toggleMode {
+    background-color: #008CBA;
+}
